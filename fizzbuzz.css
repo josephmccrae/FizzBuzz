@@ -1,0 +1,59 @@
+body {
+    background-color: #c8edff;
+}
+
+
+#main {
+    display: block;
+    min-width: 725px;
+    width: 100%;
+}
+
+
+.fizzBuzz, .buzz, .fizz, .numbers {
+    background-image: url(button1.png);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    height: 50px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+    width: 100px;
+}
+
+
+.buzz p {
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: .95em;
+    font-weight: 100;
+    text-shadow: 2px 2px 5px #111;
+}
+
+
+.fizz p {
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: .95em;
+    font-weight: 100;
+    text-shadow: 2px 2px 5px #111;
+}
+
+
+.fizzBuzz p {
+    color: #f4d90c;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: .95em;
+    font-weight: 100;
+    text-shadow: 2px 2px 5px #000;
+}
+
+
+.numbers p {
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: .95em;
+    text-shadow: 2px 2px 7px #000;
+}
