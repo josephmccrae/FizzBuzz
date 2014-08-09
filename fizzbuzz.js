@@ -1,32 +1,39 @@
 $(document).ready(function() {
-        
-    for (var i = 1; i < 101; i++) {
-    if (i % 15 == 0) {
-        $('#main').append('<span class="fizzBuzz"><p>Fizz Buzz</p></span>');
-    } else if (i % 3 == 0) {
-        $('#main').append('<span class="buzz"><p>Buzz</p></span>');
-    } else if (i % 5 == 0) {
-        $('#main').append('<span class="fizz"><p>Fizz</p></span>');
-    } else {
-        $('#main').append('<span class="numbers"><p>' + i + "</p></span>");
+    
+    $('input').keydown(function (enter) {    
+      if (enter.keyCode == 13) {
+          $('.numbers').remove();         
+          var j = $('input').val();
+    
+      for (var i = 1; i <= j; i++) {
+        if (i % 15 == 0) {
+          $('#main').append('<span id="fizzBuzz" class="numbers"><p class="numTxt">FIZZ BUZZ</p></span>');
+        } else if (i % 3 == 0) {
+          $('#main').append('<span id="buzz" class="numbers"><p class="numTxt">Buzz</p></span>');
+        } else if (i % 5 == 0) {
+          $('#main').append('<span id="fizz" class="numbers"><p class="numTxt">Fizz</p></span>');
+        } else {
+          $('#main').append('<span id="reg" class="numbers"><p class="numTxt">' + i + "</p></span>");
         } 
-    $('span').hide();
-        
-     $(function() {
-     setInterval(function () {
-      $('span').each(function (i) {
-
-    $(this).delay((i++) * 100).fadeTo(1000, 1); 
-    });
-     }, 100);
-     });
-    
+      $('.numbers').hide();  
+      }
     }
+ 
+    $(function() {
+      setInterval(function () {
+      $('.numbers').each(function (i) {
 
- }); 
-    
-    
+      $(this).delay((i++) * 50).fadeTo(50, 1); 
+      });
+        }, 100);
+    });  
+  });
+}); 
+
+                     
 
 
+        
+
     
-    
+  

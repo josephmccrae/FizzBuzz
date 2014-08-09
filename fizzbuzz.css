@@ -1,16 +1,64 @@
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+
 body {
     background-color: #c8edff;
 }
 
 
-#main {
-    display: block;
-    min-width: 725px;
+
+#container {
+    height: 100%;
     width: 100%;
 }
 
 
-.fizzBuzz, .buzz, .fizz, .numbers {
+
+.control {
+    background-color: #ffe79c;
+    display: inline-block;
+    float: left;
+    height: 150px;
+    margin-bottom: 50px;
+    margin-left: -50px;
+    margin-top: -12px;
+    overflow: hidden;
+    width: 110%;
+}
+
+
+.instruct {
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    margin-left: 50px;
+    text-shadow: 2px 2px 7px #000;
+}
+
+
+
+input {
+    margin-left: 50px;
+}
+
+
+
+#main {
+    clear: left;
+    display: block;
+    float: left;
+    min-width: 1000px;
+    width: 100%;
+}
+
+
+
+#fizzBuzz, .buzz, .fizz, .numbers {
     background-image: url(button1.png);
     background-repeat: no-repeat;
     display: block;
@@ -24,8 +72,8 @@ body {
 }
 
 
-.buzz p {
-    color: white;
+#buzz p {
+    color: #c8edff;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: .95em;
     font-weight: 100;
@@ -33,8 +81,8 @@ body {
 }
 
 
-.fizz p {
-    color: white;
+#fizz p {
+    color: #e1ff9c;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: .95em;
     font-weight: 100;
@@ -42,16 +90,16 @@ body {
 }
 
 
-.fizzBuzz p {
-    color: #f4d90c;
+#fizzBuzz p {
+    color: #ffe79c;
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: .95em;
+    font-size: .95;
     font-weight: 100;
-    text-shadow: 2px 2px 5px #000;
+    text-shadow: 2px 2px 7px #000;
 }
 
 
-.numbers p {
+#reg p {
     color: white;
     font-family: Verdana, Geneva, sans-serif;
     font-size: .95em;
