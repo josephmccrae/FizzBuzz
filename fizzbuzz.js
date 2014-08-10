@@ -5,6 +5,7 @@ $(document).ready(function() {
           $('.numbers').remove();         
           var j = $('input').val();
     
+    if(j <=100) {
       for (var i = 1; i <= j; i++) {
         if (i % 15 == 0) {
           $('#main').append('<span id="fizzBuzz" class="numbers"><p class="numTxt">FIZZ BUZZ</p></span>');
@@ -17,7 +18,11 @@ $(document).ready(function() {
         } 
       $('.numbers').hide();  
       }
+     } else { alert("Please enter a number between 1 and 100"); }
     }
+          
+          
+          
  
     $(function() {
       setInterval(function () {
